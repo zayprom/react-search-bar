@@ -1,13 +1,85 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #111;
+  letter-spacing: 1.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.search-area {
+  text-align: center;
+  padding: 12.6rem 0;
+}
+
+.inputs-flex {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.4rem;
+}
+
+.input-item {
+  padding: 2.4rem;
+  border-radius: 11px;
+  background-color: #8ec5fc;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+}
+
+.input-heading {
+  padding-bottom: 1.2rem;
+}
+
+input,
+button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+input[type="text"] {
+  margin-right: 0.8rem;
+}
+
+button {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+/* input[type="text"] {
+  font-size: 2.2rem;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 7px;
+  padding: 0.8rem 1.2rem;
+  margin-right: 1.2rem;
+}
+
+button[type="submit"] {
+  font-size: 2.2rem;
+  font-family: inherit;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  letter-spacing: inherit;
+} */
