@@ -24,6 +24,10 @@ body {
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
+.App {
+  height: 100vh;
+}
+
 .search-area {
   text-align: center;
   padding: 12.6rem 0;
