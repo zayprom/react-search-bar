@@ -1,6 +1,9 @@
 import React from "react";
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => {
+  const clearInput = () => {
+    setSearchQuery(() => "");
+  };
   return (
     <div className="search-area">
       <form action="/" method="get">
@@ -12,7 +15,13 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
           placeholder="Search"
           name="search"
         />
-        <button type="submit">search</button>
+        {searchQuery.length === 0 ? (
+          <button type="submit">search</button>
+        ) : (
+          <button className="clear" onClick={clearInput}>
+            clear
+          </button>
+        )}
       </form>
     </div>
   );
