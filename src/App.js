@@ -39,7 +39,11 @@ function App() {
     }
     return inputs.filter((input) => {
       const inputName = input.name.toLowerCase();
-      return inputName.includes(query.toLowerCase());
+      const inputContent = input.content.toLowerCase();
+      return (
+        inputName.includes(query.toLowerCase()) ||
+        inputContent.includes(query.toLowerCase())
+      );
     });
   };
 
